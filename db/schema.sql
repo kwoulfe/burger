@@ -3,11 +3,11 @@ CREATE DATABASE burgers_db;
 USE burgers_db;
 CREATE TABLE burgers
 (
-    id int
-    AUTO_INCREMENT,
+  id int
+  AUTO_INCREMENT,
   burger_name varchar
-    (30) NOT NULL,
-  devoured BOOLEAN,
+  (30) NOT NULL,
+  devoured BOOLEAN default false,
   PRIMARY KEY
-    (id)
+  (id)
 );
